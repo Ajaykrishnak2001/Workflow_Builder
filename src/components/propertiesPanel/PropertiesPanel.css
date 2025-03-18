@@ -1,0 +1,154 @@
+.properties-panel {
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  border-left: 2px solid #ddd;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.properties-panel h3 {
+  margin: 0;
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;  
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.properties-panel.empty {
+  display: none;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+
+.save-button {
+  background: #007bff;
+  color: white;
+}
+
+.save-button:hover {
+  background: #0056b3;
+}
+
+
+.cancel-button {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-button:hover {
+  background: #a71d2a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .properties-panel {
+    width: 100%; 
+    height: auto; 
+    padding: 15px; 
+  }
+
+  .properties-panel h3 {
+    font-size: 20px; 
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 12px; 
+    padding: 8px; 
+  }
+
+  .button-group {
+    flex-direction: column; 
+    gap: 8px;
+  }
+
+  .button-group button {
+    font-size: 12px; 
+    padding: 8px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .properties-panel {
+    padding: 10px; 
+  }
+
+  .properties-panel h3 {
+    font-size: 18px; 
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 12px; 
+  }
+
+  .button-group button {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+}

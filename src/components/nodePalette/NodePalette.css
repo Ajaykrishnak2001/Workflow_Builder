@@ -1,0 +1,69 @@
+.node-palette {
+    width: 200px;
+    background: #f8f9fa;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.node-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .node-palette {
+        max-width: 75px; /* Further reduce width on small screens */
+        padding: 8px;
+    }
+
+    .node-btn {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .node-palette {
+        max-width: 55px; /* Even smaller for very small screens */
+        padding: 5px;
+    }
+
+    .node-btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+/* Node Colors */
+.start {
+    background: #3498db;
+    color: white;
+}
+
+.process {
+    background: #f39c12;
+    color: white;
+}
+
+.decision {
+    background: #e74c3c;
+    color: white;
+}
+
+
+
+

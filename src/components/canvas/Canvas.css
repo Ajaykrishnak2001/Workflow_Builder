@@ -1,0 +1,81 @@
+.canvas-container {
+    position: relative;
+    flex: 1;
+    min-width: 0; /* Prevents overflow issues */
+    height: 100%; /* Let flexbox handle height */
+    background: #f8f9fa;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Workflow Buttons Container */
+.canvas-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Save Workflow Button */
+.save-workflow-button,
+.load-workflow-button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.save-workflow-button {
+    background-color: #007bff;
+}
+
+.load-workflow-button {
+    background-color: #28a745;
+}
+
+.save-workflow-button:hover {
+    background-color: #0056b3;
+}
+
+.load-workflow-button:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .canvas-buttons {
+        top: 5px;
+        right: 10px;
+        gap: 5px;
+    }
+
+    .save-workflow-button,
+    .load-workflow-button {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    
+    .canvas-container {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-radius: 0;
+    }
+
+    .react-flow__minimap {
+        width: 80px;  /* Smaller width */
+        height: 50px; /* Smaller height */
+        bottom: 5px;  /* Adjust position */
+        right: 5px;
+        background: #16161614; /* Slightly darker for better visibility */
+        border-radius: 5px;
+    }
+}

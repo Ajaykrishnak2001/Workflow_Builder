@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.workflow-container {
+  flex-grow: 1;
+  position: relative;
+}
+
+.node-palette {
+  width: 200px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.properties-panel {
+  width: 300px;
+  padding: 10px;
+  background: #eaeaea;
+}
