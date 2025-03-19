@@ -1,12 +1,63 @@
-# React + Vite
+# Workflow Builder #
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A workflow builder application built using Vite, React, Redux, and React Flow. This tool allows users to drag and drop different types of nodes onto a canvas, connect them, and manage workflows visually.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Drag-and-drop node management
 
-## Expanding the ESLint configuration
+Connect nodes with edges
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Context menu for node deletion
+
+Save and load workflows to local storage
+
+Responsive design for mobile and desktop
+
+Dynamic node properties panel
+
+# Tech Stack
+
+Frontend: React, Vite, Redux, React Flow
+
+State Management: Redux Toolkit
+
+UI Components: React Icons, SweetAlert2
+
+
+# Installation
+
+Prerequisites
+
+Ensure you have the following installed:
+
+Node.js (>= 16.x recommended)
+npm or yarn
+
+Clone the Repository
+
+Install Dependencies
+npm install
+# OR
+yarn install
+
+Run the Application
+npm run dev
+# OR
+yarn dev
+
+The app will be available at http://localhost:5173/ (default Vite port).
+
+# Usage 
+
+Drag a node from the side palette onto the canvas.
+
+Click on a node to open the properties panel and modify its details.
+
+Connect nodes by dragging from one node's connection point to another.
+
+Save your workflow using the Save Workflow button.
+
+Load a previously saved workflow using the Load Workflow button.
+
+Right-click a node to access the delete option.
